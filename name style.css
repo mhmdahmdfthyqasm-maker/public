@@ -1,0 +1,548 @@
+/* ==================== Task 11: Global Styles & CSS Variables ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4F46E5;
+  --dark: #111827;
+  --accent: #F59E0B;
+  --light-bg: #F3F4F6;
+  --white: #FFFFFF;
+  --radius: 8px;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* ==================== Task 12: Navbar Styling (Flexbox) ==================== */
+.navbar {
+  background-color: var(--dark);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar .logo span {
+  color: var(--accent);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar a {
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+}
+
+.navbar .nav-btn {
+  background-color: var(--primary);
+}
+
+/* ==================== Task 13: Hero Styling (Flexbox) ==================== */
+.hero {
+  background: linear-gradient(135deg, var(--dark), #1E1B4B);
+  color: var(--white);
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 0 0 45%;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: bold;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+}
+
+/* ==================== Task 14: Statistics Styling ==================== */
+.statistics {
+  background-color: var(--white);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-item h3 {
+  color: var(--primary);
+  font-size: 1.8rem;
+}
+
+/* ==================== Task 15 & 16: Popular Courses (Grid & Flex) ==================== */
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: minmax(300px, auto);
+  gap: 24px;
+  padding: 3rem 0;
+}
+
+.courses-container article:first-child {
+  grid-column: 1 / span 2;
+  grid-row: span 2;
+}
+
+.course-card {
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.courses-container article:first-child img {
+  flex: 1;
+}
+
+.course-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.course-level {
+  align-self: flex-start;
+  background-color: var(--light-bg);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.course-footer {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.course-footer span {
+  flex-grow: 1;
+}
+
+.enroll-btn {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+}
+
+/* ==================== Task 17: How It Works Styling ==================== */
+.how-it-works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 24px;
+  padding: 3rem 0;
+}
+
+.step-card {
+  flex: 1 1 280px;
+  padding: 1.5rem;
+  background-color: var(--light-bg);
+  border-radius: var(--radius);
+  display: flex;
+  gap: 1rem;
+}
+
+.step-number {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  align-self: flex-start;
+  font-weight: bold;
+}
+
+/* ==================== Task 18: Why CodeNile Layout (Grid Areas) ==================== */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "live live labs"
+    "cert path labs";
+  gap: 20px;
+  padding: 3rem 0;
+}
+
+.why-grid .live { grid-area: live; background-color: #EEF2FF; color: var(--primary); }
+.why-grid .labs { grid-area: labs; background-color: var(--dark); color: var(--white); }
+.why-grid .cert { grid-area: cert; background-color: #FEF3C7; color: #92400E; }
+.why-grid .path { grid-area: path; background-color: #ECFDF5; color: #065F46; }
+
+.why-grid article {
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+
+/* ==================== Task 19: Trainers Layout ==================== */
+.trainers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  justify-content: center;
+  align-content: center;
+  min-height: 480px;
+  gap: 24px;
+}
+
+.trainer-card {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--light-bg);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+}
+
+.trainer-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  object-fit: cover;
+}
+
+/* ==================== Task 20: Student Projects Layout ==================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 140px;
+  gap: 16px;
+  padding: 3rem 0;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.gallery div:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.gallery div:nth-child(4) {
+  grid-column: 3 / span 2;
+  grid-row: 1 / 3;
+}
+
+/* ==================== Task 21: Newsletter & Footer (Flexbox) ==================== */
+.newsletter {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 1rem;
+}
+
+.newsletter input {
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  border: none;
+}
+
+.newsletter button {
+  background-color: var(--accent);
+  color: var(--dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  border: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* ==================== Task 22: Pseudo-classes & Pseudo-elements ==================== */
+a, button, input {
+  transition: all 0.3s ease;
+}
+
+a:hover, .enroll-btn:hover, .btn-primary:hover {
+  opacity: 0.85;
+}
+
+a:focus, button:focus, input:focus {
+  outline: 2px solid var(--accent);
+}
+
+.step-card:nth-child(even) {
+  background-color: #E5E7EB;
+}
+
+.courses-container article:first-child::before {
+  content: "Most Popular";
+  position: absolute;
+  background-color: var(--accent);
+  color: var(--dark);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: var(--radius);
+  margin: 10px;
+}
+
+.hero-badge::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #10B981;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--accent);
+  margin-top: 8px;
+}
+
+/* ==================== Task 23: Transition, Transform & Animation ==================== */
+.course-card:hover, .trainer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.trainer-card img:hover {
+  transform: scale(1.05) rotate(3deg);
+}
+
+.project-box img:hover {
+  transform: scale(1.08);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.hero-image img {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+
+.hero-badge::before {
+  animation: blink 1.5s infinite;
+}
+
+/* ==================== Task 24: CSS Combinators ==================== */
+footer .footer-links a {
+  color: #9CA3AF;
+}
+
+.navbar ul > li > a {
+  font-weight: bold;
+}
+
+.hero-text h1 + p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.course-body h3 ~ p {
+  color: #4B5563;
+  font-size: 0.95rem;
+}
+
+/* ==================== Task 25: Responsive Design (Media Queries) ==================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    order: -1;
+    flex: 0 0 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .statistics {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .stat-item {
+    flex: 1 1 40%;
+  }
+
+  .courses-container {
+    grid-template-columns: 1fr;
+  }
+
+  .courses-container article:first-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .why-grid {
+    grid-template-areas:
+      "live"
+      "labs"
+      "cert"
+      "path";
+    grid-template-columns: 1fr;
+  }
+
+  .trainers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery div:nth-child(1),
+  .gallery div:nth-child(4) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .gallery div:nth-child(1) {
+    grid-column: 1 / span 2;
+  }
+
+  .gallery div:nth-child(6) {
+    grid-column: 1 / span 2;
+  }
+}

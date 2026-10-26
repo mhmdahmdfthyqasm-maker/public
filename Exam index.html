@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeNile Academy</title>
+    <link rel="stylesheet" href="name style.css">
+</head>
+<body>
+
+    <!-- Task 2: Navbar -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo">Code<span>Nile</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#join" class="nav-btn">Join Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Task 3: Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="hero-badge"><span class="dot"></span>New batch starts in November</span>
+                <h1>Learn to build real websites</h1>
+                <p class="hero-desc">Master modern web development with expert-led courses, hands-on practice labs, and real-world capstone projects designed to launch your tech career.</p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-accent">Start Learning</a>
+                    <a href="#projects" class="btn btn-outline">See Student Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images.png" alt="Hero Illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 4: Statistics Strip -->
+    <section class="stats">
+        <div class="container stats-container">
+            <div class="stat-item">
+                <h2>1,200+</h2>
+                <p>Students</p>
+            </div>
+            <div class="stat-item">
+                <h2>6</h2>
+                <p>Courses</p>
+            </div>
+            <div class="stat-item">
+                <h2>15</h2>
+                <p>Expert Trainers</p>
+            </div>
+            <div class="stat-item">
+                <h2>96%</h2>
+                <p>Pass the final project</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 5 & 16 & 22: Popular Courses -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2>Popular Courses</h2>
+            <p class="section-subtitle">Explore our industry-standard programming courses</p>
+            
+            <div class="courses-grid">
+                <!-- Card 1 (Spans 2 columns & 2 rows, Most Popular badge via ::before) -->
+                <article class="course-card featured-card">
+                    <img src="images.jpg" alt="HTML5 Course">
+                    <div class="card-body">
+                        <span class="level-tag">Beginner</span>
+                        <h3>HTML5 Masterclass</h3>
+                        <p class="course-desc">Build the solid foundation of web structure and modern semantic markup for professional websites.</p>
+                        <div class="card-footer">
+                            <span class="lessons-count">12 Lessons</span>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="course-card">
+                    <img src="images (2).jpg" alt="CSS3 Course">
+                    <div class="card-body">
+                        <span class="level-tag">Beginner</span>
+                        <h3>CSS3 & Responsive Design</h3>
+                        <p class="course-desc">Master Flexbox, CSS Grid, and animations to style stunning responsive layouts.</p>
+                        <div class="card-footer">
+                            <span class="lessons-count">14 Lessons</span>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="course-card">
+                    <img src="images.png" alt="JavaScript Course">
+                    <div class="card-body">
+                        <span class="level-tag">Intermediate</span>
+                        <h3>JavaScript Essentials</h3>
+                        <p class="course-desc">Bring your web pages to life with dynamic interactivity and modern ES6+ features.</p>
+                        <div class="card-footer">
+                            <span class="lessons-count">18 Lessons</span>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="course-card">
+                    <img src="images (4).jpg" alt="PHP Course">
+                    <div class="card-body">
+                        <span class="level-tag">Advanced</span>
+                        <h3>PHP Backend Development</h3>
+                        <p class="course-desc">Build robust server-side applications and handle dynamic web database requests.</p>
+                        <div class="card-footer">
+                            <span class="lessons-count">16 Lessons</span>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="course-card">
+                    <img src="images (3).jpg" alt="MySQL Course">
+                    <div class="card-body">
+                        <span class="level-tag">Intermediate</span>
+                        <h3>MySQL Database Management</h3>
+                        <p class="course-desc">Design relational databases, write complex queries, and manage data efficiently.</p>
+                        <div class="card-footer">
+                            <span class="lessons-count">10 Lessons</span>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="course-card">
+                    <img src="images/course-react.png" alt="React Course">
+                    <div class="card-body">
+                        <span class="level-tag">Advanced</span>
+                        <h3>React.js Frontend Library</h3>
+                        <p class="course-desc">Build modern single-page applications with components, state, and hooks.</p>
+                        <div class="card-footer">
+                            <span class="lessons-count">20 Lessons</span>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 6: How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Choose your course</h3>
+                        <p>Select from our structured learning tracks tailored to your career goals.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Practice every lesson</h3>
+                        <p>Apply your knowledge instantly with code snippets and guided interactive labs.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Finish a capstone project</h3>
+                        <p>Build and deploy real-world projects to showcase in your professional portfolio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 7: Why CodeNile -->
+    <section class="why-codenile">
+        <div class="container">
+            <h2>Why CodeNile?</h2>
+            <div class="why-grid">
+                <article class="why-block live">
+                    <h3>Live Classes</h3>
+                    <p>Interact directly with expert instructors, ask questions, and get real-time feedback during live sessions.</p>
+                </article>
+                <article class="why-block labs">
+                    <h3>Practice Labs</h3>
+                    <p>Gain hands-on coding experience in our simulated cloud environments designed to reinforce core concepts.</p>
+                </article>
+                <article class="why-block cert">
+                    <h3>Certificates</h3>
+                    <p>Earn industry-recognized certificates upon successful completion of courses and final capstone projects.</p>
+                </article>
+                <article class="why-block path">
+                    <h3>Capstone Projects</h3>
+                    <p>Work on end-to-end practical projects that mirror actual software engineering industry standards.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 8: Meet Our Trainers -->
+    <section id="trainers" class="trainers-section">
+        <div class="container">
+            <h2>Meet Our Trainers</h2>
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <img src="images (2).jpg" alt="Trainer 1">
+                    <h3>Dr. Omar Hassan</h3>
+                    <p class="trainer-role">Lead Full-Stack Instructor</p>
+                    <p>Over 10 years of software engineering experience building enterprise web solutions.</p>
+                </div>
+                <div class="trainer-card">
+                    <img src="hero-image-examples-mars-explorer.png" alt="Trainer 2">
+                    <h3>Eng. Sarah Ahmed</h3>
+                    <p class="trainer-role">Frontend Specialist</p>
+                    <p>Passionate UI/UX developer dedicated to teaching clean code and modern responsive design.</p>
+                </div>
+                <div class="trainer-card">
+                    <img src="images (3).jpg" alt="Trainer 3">
+                    <h3>Eng. Khaled Ali</h3>
+                    <p class="trainer-role">Backend & Database Expert</p>
+                    <p>Database architect specializing in scalable server infrastructures and API security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 9: Student Projects -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Student Projects</h2>
+            <div class="gallery">
+                <div class="project-box project-1">
+                    <img src="images.png"Student Project 1">
+                </div>
+                <div class="project-box project-2">
+                    <img src="images.png" alt="Student Project 2">
+                </div>
+                <div class="project-box project-3">
+                    <img src="images.jpg" alt="Student Project 3">
+                </div>
+                <div class="project-box project-4">
+                    <img src="images (4).jpg" alt="Student Project 4">
+                </div>
+                <div class="project-box project-5">
+                    <img src="images (2).jpg" alt="Student Project 5">
+                </div>
+                <div class="project-box project-6">
+                    <img src="images (3).jpg" alt="Student Project 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 10 & 21: Newsletter and Footer -->
+    <section class="newsletter-section" id="join">
+        <div class="container newsletter-content">
+            <div class="newsletter-text">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter to receive the latest web development tips, course announcements, and tech insights.</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-accent">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <a href="#" class="logo">Code<span>Nile</span></a>
+                <p>Empowering the next generation of digital creators and software engineers across the region.</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <p class="footer"> 2026 CodeNile Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
